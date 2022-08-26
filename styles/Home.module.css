@@ -1,0 +1,8 @@
+.main {
+  height: 90vh;
+  /* background-color: #212529; */
+  /* background-color: #c8e7f2; */
+  background-color: #e8c49f;
+  display: flex;
+  align-items: center;
+}
