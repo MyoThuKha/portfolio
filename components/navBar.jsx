@@ -5,7 +5,10 @@ const NavBar = () => {
     backgroundColor: "#e8c49f",
   };
   return (
-    <nav style={styles} className="navbar navbar-light border-bottom">
+    <nav
+      style={styles}
+      className="navbar navbar-light border-bottom border-dark"
+    >
       <div className="container">
         <div className="navbar-brand p-2">Myo Thu Kha</div>
         <div className="">

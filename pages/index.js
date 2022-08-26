@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.main}>
+    <div className={styles.container}>
       <div className="container">
         <div className="fs-1 text-primary fw-bold">Hi,</div>
         <div className="fs-1 text-dark">
