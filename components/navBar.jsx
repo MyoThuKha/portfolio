@@ -13,16 +13,24 @@ const NavBar = () => {
         <div className="navbar-brand p-2">Myo Thu Kha</div>
         <div className="">
           <Link href="/">
-            <div className="text-dark d-inline-block mx-2">Home</div>
+            <a className="text-decoration-none text-dark d-inline-block mx-2">
+              Home
+            </a>
+          </Link>
+          <Link href="/skills" className="text-dark d-inline-block mx-2">
+            <a className=" text-decoration-none text-dark d-inline-block mx-2">
+              Skills
+            </a>
+          </Link>
+          <Link href="/projects">
+            <a className="text-decoration-none text-dark d-inline-block mx-2">
+              Projects
+            </a>
           </Link>
           <Link href="">
-            <div className="text-dark d-inline-block mx-2">Skills</div>
-          </Link>
-          <Link href="">
-            <div className="text-dark d-inline-block mx-2">Projects</div>
-          </Link>
-          <Link href="">
-            <div className="text-dark d-inline-block mx-2">Contact Me</div>
+            <a className="text-decoration-none text-dark d-inline-block mx-2">
+              Contact Me
+            </a>
           </Link>
         </div>
       </div>
