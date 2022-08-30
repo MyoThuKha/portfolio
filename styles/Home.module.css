@@ -1,8 +1,15 @@
 .container {
-  height: 90vh;
-  /* background-color: #212529; */
-  /* background-color: #c8e7f2; */
-  background-color: #e8c49f;
-  display: flex;
-  align-items: center;
+  height: 100vh;
+  background-color: #eeeff1;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.pageTitle {
+  font-size: 80px;
+  font-family: "romance-logic";
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
