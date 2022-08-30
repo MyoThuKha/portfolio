@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   const styles = {
@@ -7,13 +8,13 @@ const NavBar = () => {
 
   const template = (href, text) => {
     return (
-      <div className="d-inline-block">
+      <motion.div whileHover={{ scale: 1.2 }} className="d-inline-block">
         <Link href={href}>
-          <a className="text-decoration-none text-dark d-inline-block mx-2">
+          <a className="text-decoration-none text-dark fs-6 d-inline-block mx-2">
             {text}
           </a>
         </Link>
-      </div>
+      </motion.div>
     );
   };
   return (
