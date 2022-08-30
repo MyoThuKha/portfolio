@@ -36,6 +36,19 @@ const nameVariant = {
     originX: 0,
   },
 };
+const boxVariant = {
+  before: {
+    opacity: 0,
+    y: "-100vh",
+  },
+  after: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+    },
+  },
+};
 export default function Home() {
   return (
     <React.Fragment>
@@ -62,6 +75,18 @@ export default function Home() {
             Myo Thu Kha
           </motion.div>
           <div className={styles.text}>I am a Frontend Developer</div>
+        </motion.div>
+
+        <motion.div
+          variants={boxVariant}
+          className="d-flex container justify-content-end"
+        >
+          <motion.div
+            drag
+            dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
+            dragElastic={1}
+            className={styles.box}
+          ></motion.div>
         </motion.div>
       </motion.div>
     </React.Fragment>
