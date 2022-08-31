@@ -31,7 +31,7 @@ const textVariant = {
     },
   },
 };
-const nameVariant = {
+const hoverVariant = {
   hover: {
     scale: 1.1,
     originX: 0,
@@ -48,6 +48,9 @@ const boxVariant = {
     transition: {
       type: "spring",
     },
+  },
+  hover: {
+    scale: 1.1,
   },
 };
 export default function Home() {
@@ -69,7 +72,7 @@ export default function Home() {
           <span className="">Hi</span> my name is
           <br />
           <motion.div
-            variants={nameVariant}
+            variants={hoverVariant}
             whileHover="hover"
             className="d-inline-block fs-3 pb-4"
           >
@@ -81,15 +84,11 @@ export default function Home() {
         <motion.div
           variants={boxVariant}
           style={{ marginRight: "100px" }}
-          className="d-flex container justify-content-end d-none d-lg-flex"
+          className="d-flex container justify-content-end d-none d-md-flex d-lg-flex"
         >
-          {/* <motion.div
-            drag
-            dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
-            dragElastic={1}
-            className={styles.box}
-          ></motion.div> */}
           <motion.svg
+            variants={hoverVariant}
+            whileHover="hover"
             drag
             dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
             dragElastic={1}
