@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import React from "react";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
@@ -61,7 +62,7 @@ export default function Home() {
         animate="after"
         className={styles.container}
       >
-        <div className={styles.pageTitle}>Home Page</div>
+        <div className={styles.pageTitle}>Home&nbsp;Page</div>
 
         {/* introduction */}
         <motion.div variants={textVariant} className={styles.text}>
@@ -79,14 +80,32 @@ export default function Home() {
 
         <motion.div
           variants={boxVariant}
-          className="d-flex container justify-content-end"
+          style={{ marginRight: "100px" }}
+          className="d-flex container justify-content-end d-none d-lg-flex"
         >
-          <motion.div
+          {/* <motion.div
             drag
             dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
             dragElastic={1}
             className={styles.box}
-          ></motion.div>
+          ></motion.div> */}
+          <motion.svg
+            drag
+            dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
+            dragElastic={1}
+            width="250"
+            height="250"
+            viewBox="0 0 250 250"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="rectangle"
+              d="M1 1H249V249H1V1Z"
+              stroke="black"
+              strokeWidth="2"
+            />
+          </motion.svg>
         </motion.div>
       </motion.div>
     </React.Fragment>
