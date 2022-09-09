@@ -1,0 +1,38 @@
+.form {
+  border-radius: 10;
+  border-color: black;
+  border-width: 1px;
+  width: 300px;
+  height: 300px;
+}
+
+.inputBox {
+  width: 500px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border-width: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 481px) {
+  .pageTitle {
+    font-size: 80px;
+    font-family: "romance-logic";
+  }
+  .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pageTitle {
+    font-size: 40px;
+    font-family: "romance-logic";
+  }
+  .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+  }
+}

@@ -1,7 +1,9 @@
 const Projects = () => {
   return (
     <div>
-      <div>Projects list</div>
+      <div className="bodyBox">
+        <div className="titleHeader">Projects list</div>
+      </div>
     </div>
   );
 };

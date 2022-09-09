@@ -63,9 +63,9 @@ export default function Home() {
         variants={titleVariant}
         initial="before"
         animate="after"
-        className={styles.container}
+        className="bodyBox"
       >
-        <div className={styles.pageTitle}>Home&nbsp;Page</div>
+        <div className="titleHeader">Home&nbsp;Page</div>
 
         {/* introduction */}
         <motion.div variants={textVariant} className={styles.text}>

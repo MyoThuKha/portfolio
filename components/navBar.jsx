@@ -19,7 +19,10 @@ const NavBar = () => {
       >
         <motion.div whileHover={{ scale: 1.2 }}>
           <Link href={href}>
-            <a className="text-decoration-none text-dark fs-6 d-inline-block mx-2">
+            <a
+              style={{ fontFamily: "arial" }}
+              className="text-decoration-none text-dark fs-6 d-inline-block mx-2"
+            >
               {text}
             </a>
           </Link>
@@ -35,7 +38,7 @@ const NavBar = () => {
       <div className="container justify-content-between">
         {/* <div className="navbar-brand p-2">Myo Thu Kha</div> */}
         {template("/", "Home")}
-        {template("/skills", "Skills")}
+        {template("/abouts", "About")}
         {template("/projects", "Projects")}
         {template("/contact", "Contact Me")}
       </div>
