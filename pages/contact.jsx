@@ -7,55 +7,24 @@ const Contact = () => {
         <div className={styles.pageTitle}>Contact&nbsp;Me</div>
       </div>
       <div className="row">
-        <h5>Social</h5>
+        <h5 className="mt-5">Social</h5>
         <div className="d-flex align-items-center">
           <div className=" d-inline-block">
             <div>Facebook</div>
             <div>Twitter</div>
             <div>LinkedIn</div>
           </div>
-          <div className="d-inline-block">
-            <Divider />
-            <Divider />
-            <Divider />
-          </div>
-          <div className=" d-inline-block">
-            <div>https://www.facebook.com/myo.t.kha.79</div>
-            <div>https://twitter.com/MyoThuKha6</div>
-            <div>LinkedIn</div>
-            {/* https://www.facebook.com/myo.t.kha.79/ */}
-          </div>
         </div>
+
+        {/*  */}
         <div>
-          <h5>Github</h5>
-          <div className="d-flex align-items-center">
-            <div className=" d-inline-block">
-              <div>Github</div>
-            </div>
-            <div className="d-inline-block">
-              <Divider />
-            </div>
-            <div className=" d-inline-block">
-              <div>https://www.github.com/MyoThuKha</div>
-            </div>
-          </div>
-          <div></div>
+          <h5 className="mt-5">Mail</h5>
+          <div>myothukha.dev@gmail.com</div>
         </div>
-        <h5>Email</h5>
-        <div className="d-flex align-items-center">
-          <div className=" d-inline-block">
-            <div>Personal</div>
-            <div>School</div>
-          </div>
-          <div className="d-inline-block">
-            <Divider />
-            <Divider />
-          </div>
-          <div className=" d-inline-block">
-            <div>myothukha.dev@gmail.com</div>
-            <div>myothukha@ucsm.edu.mm</div>
-          </div>
-        </div>
+
+        {/*  */}
+        <h5 className="mt-5">Github</h5>
+        <div>https://www.github.com/MyoThuKha</div>
       </div>
     </div>
   );
@@ -63,7 +32,10 @@ const Contact = () => {
 
 const Divider = ({ name, value }) => {
   return (
-    <div className="ms-3 me-3 bg-black" style={{ width: 1, height: 30 }}></div>
+    <div
+      className="ms-3 me-3 bg-black"
+      style={{ width: 1.5, height: 30 }}
+    ></div>
   );
 };
 
