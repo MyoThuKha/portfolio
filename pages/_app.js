@@ -5,10 +5,11 @@ import FooterBar from "../components/footBar";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <div style={{ backgroundColor: "#eeeff1" }}>
       <NavBar></NavBar>
-      <Component {...pageProps} />
-      {/* <FooterBar></FooterBar> */}
+      <div className="ps-4 pe-3">
+        <Component {...pageProps} />
+      </div>
     </div>
   );
 }

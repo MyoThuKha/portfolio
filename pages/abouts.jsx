@@ -1,9 +1,9 @@
-import styles from "../styles/Skills.module.css";
+import styles from "../styles/About.module.css";
 
 export default function About() {
   return (
-    <div style={{ height: "100vh", backgroundColor: "#eeeff1" }}>
-      <div className={styles.pageTitle}>Skills</div>
+    <div className="bodyBox">
+      <div className="titleHeader">About</div>
       <div></div>
     </div>
   );

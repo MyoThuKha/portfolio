@@ -31,10 +31,7 @@ const NavBar = () => {
     );
   };
   return (
-    <nav
-      style={{ backgroundColor: "#eeeff1" }}
-      className="navbar navbar-light  border-dark"
-    >
+    <nav className="navbar navbar-light">
       <div className="container justify-content-between">
         {/* <div className="navbar-brand p-2">Myo Thu Kha</div> */}
         {template("/", "Home")}

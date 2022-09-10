@@ -2,12 +2,7 @@
   font-family: "romance-logic";
   src: url("../assets/fonts/romance-logic.ttf");
 }
-html {
-  background-color: #eeeff1;
-}
-
 body {
-  background-color: #eeeff1;
   height: 100vh;
   font-family: "Arial";
 }
