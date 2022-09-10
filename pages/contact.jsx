@@ -18,7 +18,7 @@ const Contact = () => {
 
         {/*  */}
         <div>
-          <h5 className="mt-5">Mail</h5>
+          <h5 className="mt-5">Gmail</h5>
           <div>myothukha.dev@gmail.com</div>
         </div>
 

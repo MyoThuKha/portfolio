@@ -2,7 +2,7 @@ const Projects = () => {
   return (
     <div>
       <div className="bodyBox">
-        <div className="titleHeader">Projects list</div>
+        <div className="titleHeader">Projects</div>
       </div>
     </div>
   );

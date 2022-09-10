@@ -26,7 +26,7 @@ body {
 }
 .bodyBox {
   background-color: #eeeff1;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Arial";
 }
 

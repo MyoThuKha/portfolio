@@ -30,7 +30,7 @@ export default function Home() {
           <motion.div
             variants={hoverVariant}
             whileHover="hover"
-            className="d-inline-block fs-3 pb-4"
+            className="d-inline-block fs-3 pb-3"
           >
             Myo Thu Kha
           </motion.div>
