@@ -11,6 +11,7 @@ const leftSideVariant = {
     transition: {
       type: "spring",
       stiffness: 100,
+      when: "beforeChildren",
     },
   },
 };
@@ -25,8 +26,20 @@ const rightSideVariant = {
     transition: {
       type: "spring",
       stiffness: 100,
+      when: "beforeChildren",
+    },
+  },
+};
+const arrowVariant = {
+  before: {
+    opacity: 0,
+  },
+  after: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
     },
   },
 };
 
-export { leftSideVariant, rightSideVariant };
+export { leftSideVariant, rightSideVariant, arrowVariant };
