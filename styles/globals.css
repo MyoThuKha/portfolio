@@ -34,3 +34,15 @@ body {
   font-size: 80px;
   font-family: "romance-logic";
 }
+
+.rectangleBox {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+}
+.circleBox {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 100vw;
+}
