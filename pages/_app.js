@@ -1,8 +1,7 @@
 import "../styles/globals.css";
 import NavBar from "../components/navBar";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/css/bootstrap.css";
-import FooterBar from "../components/footBar";
-
 function MyApp({ Component, pageProps }) {
   return (
     <div style={{ backgroundColor: "#eeeff1" }}>

@@ -1,12 +1,13 @@
 import styles from "../styles/About.module.css";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 import { titleVariant } from "../animation/homeVariant";
 import {
   leftSideVariant,
   rightSideVariant,
-  arrowVariant,
+  nameVariant,
+  nameVariant2,
 } from "../animation/aboutVariant";
 
 export default function About() {
@@ -28,20 +29,47 @@ export default function About() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Tempore, et. Odit explicabo dolorem delectus unde, eos
                 perspiciatis esse laborum! Nostrum.
+                {/* I am an undergraduated computer science student from Mandalay. */}
               </div>
             </div>
           </motion.div>
-          <motion.div
-            variants={titleVariant}
-            style={{ fontSize: 85 }}
-            className="d-inline-block me-5"
-            onClick={() => {
-              setName(!name);
-            }}
-          >
-            {!name && "မျိုးသုခ"}
-            {name && "Myo Thu Kha"}
-          </motion.div>
+          <div style={{ height: 150 }}>
+            <div style={{ height: 100, backgroundColor: "pink" }}>
+              <AnimatePresence>
+                {!name && (
+                  <motion.div
+                    variants={nameVariant}
+                    exit={{
+                      opacity: 0,
+                      y: "150px",
+                    }}
+                    style={{ fontSize: 85 }}
+                    className=" d-flex justify-content-end me-5"
+                    onClick={() => setName(!name)}
+                  >
+                    မျိုးသုခ
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              <AnimatePresence>
+                {name && (
+                  <motion.div
+                    variants={nameVariant2}
+                    exit={{
+                      opacity: 0,
+                      y: "-150px",
+                    }}
+                    style={{ fontSize: 85 }}
+                    className="d-flex justify-content-end me-5"
+                    onClick={() => setName(!name)}
+                  >
+                    Myo Thu Kha
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          </div>
         </article>
 
         <article>
@@ -50,11 +78,14 @@ export default function About() {
             style={{ width: 300 }}
             className=""
           >
-            <div className="lead mt-4">Education</div>
+            <div className="lead mt-4 mb-2">Education</div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              {/* Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis optio corporis sed beatae animi ipsum repellat tenetur
-              iste illum aut.
+              iste illum aut. */}
+              I attend the university of computer studies in Mandalay.
+              Currently, I am self-studying from home because of covid and the
+              junta happening in Myanmar.
             </div>
           </motion.div>
         </article>
@@ -80,10 +111,14 @@ export default function About() {
             <motion.div variants={rightSideVariant} style={{ width: 300 }}>
               <div className="lead mt-4 mb-2">Skills</div>
               <div>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+                React and Next js for Frontend. Framer-motion for the Animation.
+                Bootstrap and Tailwind for the styling. And react-native and
+                flutter for the cross-platform development. Git is the plus
+                skill.
+                {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
                 nostrum quae consectetur fugit delectus, dolorem magnam
                 similique aspernatur? Soluta accusantium, architecto quaerat quo
-                voluptatem debitis!
+                voluptatem debitis! */}
               </div>
             </motion.div>
           </div>
@@ -92,11 +127,13 @@ export default function About() {
           <motion.div variants={leftSideVariant} style={{ width: 300 }}>
             <div className="lead mt-4 mb-2">Hobbies</div>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              I like reading One Piece and listening to Bohemian Rhapsody . I
+              love eating Shan Noodles.
+              {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Suscipit, temporibus commodi necessitatibus facere itaque harum
               illum repellendus perferendis, ex voluptatum dolorum tempore
               aliquid deserunt quo earum cupiditate totam? Vitae obcaecati ad
-              atque! Nisi maiores porro quo assumenda culpa facere in?
+              atque! Nisi maiores porro quo assumenda culpa facere in? */}
             </p>
           </motion.div>
         </article>

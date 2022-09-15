@@ -1,5 +1,5 @@
-import { Formik } from "formik";
 import styles from "../styles/Contact.module.css";
+
 const Contact = () => {
   return (
     <div className="bodyBox">
@@ -10,9 +10,39 @@ const Contact = () => {
         <h5 className="mt-5">Social</h5>
         <div className="d-flex align-items-center">
           <div className=" d-inline-block">
-            <div>Facebook</div>
-            <div>Twitter</div>
-            <div>LinkedIn</div>
+            <div>
+              <a
+                className={styles.link}
+                href="https://www.facebook.com/myo.tha.79"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Facebook
+              </a>
+              <i className="bi bi-box-arrow-up-right"></i>
+            </div>
+            <div>
+              <a
+                className={styles.link}
+                href="https://twitter.com/iam_myothukha"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Twitter
+              </a>
+              <i className="bi bi-box-arrow-up-right"></i>
+            </div>
+            <div>
+              <a
+                className={styles.link}
+                href="https://www.linkedin.com/in/myo-thu-kha-170077199"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+              <i className="bi bi-box-arrow-up-right"></i>
+            </div>
           </div>
         </div>
 

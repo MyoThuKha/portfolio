@@ -1,5 +1,29 @@
-import { titleVariant } from "./homeVariant";
-
+const nameVariant = {
+  before: {
+    opacity: 0,
+    y: "100vh",
+  },
+  after: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 1,
+    },
+  },
+};
+const nameVariant2 = {
+  before: {
+    y: "-100vh",
+    opacity: 0,
+  },
+  after: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 1,
+    },
+  },
+};
 const leftSideVariant = {
   before: {
     opacity: 0,
@@ -42,4 +66,4 @@ const arrowVariant = {
   },
 };
 
-export { leftSideVariant, rightSideVariant, arrowVariant };
+export { leftSideVariant, rightSideVariant, nameVariant, nameVariant2 };
