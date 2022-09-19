@@ -26,15 +26,20 @@ export default function About() {
             <div style={{ width: 300, display: "inline-block" }}>
               <div className="lead mt-2 mb-2">Background</div>
               <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Tempore, et. Odit explicabo dolorem delectus unde, eos
-                perspiciatis esse laborum! Nostrum.
-                {/* I am an undergraduated computer science student from Mandalay. */}
+                I am a front-end engineer currently living in Pakokku, Myanmar.
+                I am looking for internships right now to work with experienced
+                developers.
               </div>
             </div>
           </motion.div>
           <div style={{ height: 150 }}>
-            <div style={{ height: 100, backgroundColor: "pink" }}>
+            <div
+              style={{
+                height: 100,
+                backgroundColor: "pink",
+                cursor: "pointer",
+              }}
+            >
               <AnimatePresence>
                 {!name && (
                   <motion.div
@@ -80,12 +85,9 @@ export default function About() {
           >
             <div className="lead mt-4 mb-2">Education</div>
             <div>
-              {/* Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis optio corporis sed beatae animi ipsum repellat tenetur
-              iste illum aut. */}
-              I attend the university of computer studies in Mandalay.
-              Currently, I am self-studying from home because of covid and the
-              junta happening in Myanmar.
+              I attend the university of computer studies Mandalay. Currently, I
+              am self-studying from home cause of the pandemic and the various
+              things happening in Myanmar.
             </div>
           </motion.div>
         </article>
@@ -111,14 +113,13 @@ export default function About() {
             <motion.div variants={rightSideVariant} style={{ width: 300 }}>
               <div className="lead mt-4 mb-2">Skills</div>
               <div>
-                React and Next js for Frontend. Framer-motion for the Animation.
-                Bootstrap and Tailwind for the styling. And react-native and
-                flutter for the cross-platform development. Git is the plus
-                skill.
-                {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-                nostrum quae consectetur fugit delectus, dolorem magnam
-                similique aspernatur? Soluta accusantium, architecto quaerat quo
-                voluptatem debitis! */}
+                I am a front-end engineer specializing in react and next js. I
+                use redux to clear and centralize the application state. For
+                styling, I can use both Bootstrap and Tailwind CSS. I use framer
+                motion for animating my projects. I also create android apps
+                using cross-platform languages like React-native and Flutter.
+                Hey, guess what? I am also fluent in python. And of course, last
+                but not least, git for version control.
               </div>
             </motion.div>
           </div>
@@ -127,13 +128,11 @@ export default function About() {
           <motion.div variants={leftSideVariant} style={{ width: 300 }}>
             <div className="lead mt-4 mb-2">Hobbies</div>
             <p>
-              I like reading One Piece and listening to Bohemian Rhapsody . I
-              love eating Shan Noodles.
-              {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Suscipit, temporibus commodi necessitatibus facere itaque harum
-              illum repellendus perferendis, ex voluptatum dolorum tempore
-              aliquid deserunt quo earum cupiditate totam? Vitae obcaecati ad
-              atque! Nisi maiores porro quo assumenda culpa facere in? */}
+              I love talking about computers and coding with other developers.
+              Drinking tea while coding is one of my favorites. In my spare
+              time, I watch some anime. One piece is awesome. I like eating
+              bread fried with eggs and topped with a bit of sugar. I also like
+              eating shan noodles for breakfast with chicken toppings.
             </p>
           </motion.div>
         </article>

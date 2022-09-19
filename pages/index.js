@@ -35,7 +35,7 @@ export default function Home() {
           >
             Myo Thu Kha
           </motion.div>
-          <div className={styles.text}>I am a Frontend Developer</div>
+          <div className={styles.text}>I am a Front-end Engineer</div>
         </motion.div>
 
         <motion.div

@@ -1,4 +1,6 @@
 import styles from "../styles/Contact.module.css";
+import { motion } from "framer-motion";
+import { linkVariant } from "../animation/contactVariant";
 
 const Contact = () => {
   return (
@@ -10,39 +12,18 @@ const Contact = () => {
         <h5 className="mt-5">Social</h5>
         <div className="d-flex align-items-center">
           <div className=" d-inline-block">
-            <div>
-              <a
-                className={styles.link}
-                href="https://www.facebook.com/myo.tha.79"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Facebook
-              </a>
-              <i className="bi bi-box-arrow-up-right"></i>
-            </div>
-            <div>
-              <a
-                className={styles.link}
-                href="https://twitter.com/iam_myothukha"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Twitter
-              </a>
-              <i className="bi bi-box-arrow-up-right"></i>
-            </div>
-            <div>
-              <a
-                className={styles.link}
-                href="https://www.linkedin.com/in/myo-thu-kha-170077199"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn
-              </a>
-              <i className="bi bi-box-arrow-up-right"></i>
-            </div>
+            <SocialLink
+              name="Facebook"
+              url="https://www.facebook.com/myo.tha.79"
+            />
+            <SocialLink
+              name="Twitter"
+              url="https://twitter.com/iam_myothukha"
+            />
+            <SocialLink
+              name="LinkedIn"
+              url="https://www.linkedin.com/in/myo-thu-kha-170077199"
+            />
           </div>
         </div>
 
@@ -54,18 +35,24 @@ const Contact = () => {
 
         {/*  */}
         <h5 className="mt-5">Github</h5>
-        <div>https://www.github.com/MyoThuKha</div>
+        <SocialLink
+          name="Myo Thu Kha"
+          url="https://www.github.com/MyoThuKha
+"
+        />
       </div>
     </div>
   );
 };
 
-const Divider = ({ name, value }) => {
+const SocialLink = ({ name, url }) => {
   return (
-    <div
-      className="ms-3 me-3 bg-black"
-      style={{ width: 1.5, height: 30 }}
-    ></div>
+    <motion.div variants={linkVariant} whileHover="hover">
+      <a className={styles.link} href={url} target="_blank" rel="noreferrer">
+        {name}
+      </a>
+      <i className="bi bi-box-arrow-up-right"></i>
+    </motion.div>
   );
 };
 
