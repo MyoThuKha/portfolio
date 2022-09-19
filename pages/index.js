@@ -10,7 +10,6 @@ import {
 } from "../animation/homeVariant";
 
 export default function Home() {
-  const [circle, setCircle] = useState(false);
   return (
     <React.Fragment>
       <Head>
@@ -42,30 +41,16 @@ export default function Home() {
           variants={boxVariant}
           style={{ marginRight: "100px" }}
           className="d-flex container justify-content-end d-none d-md-flex d-lg-flex"
-          onDoubleClick={() => {
-            setCircle(!circle);
-          }}
         >
-          {circle && (
-            <motion.div
-              variants={hoverVariant}
-              whileHover="hover"
-              drag
-              dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
-              dragElastic={1}
-              className="circleBox"
-            ></motion.div>
-          )}
-          {!circle && (
-            <motion.div
-              variants={hoverVariant}
-              whileHover="hover"
-              drag
-              dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
-              dragElastic={1}
-              className="rectangleBox"
-            ></motion.div>
-          )}
+          <motion.div
+            variants={hoverVariant}
+            whileHover="hover"
+            drag
+            dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
+            dragElastic={1}
+            whileTap={{ scale: 0.8, borderRadius: "100%" }}
+            className="rectangleBox"
+          ></motion.div>
         </motion.div>
       </motion.div>
     </React.Fragment>
