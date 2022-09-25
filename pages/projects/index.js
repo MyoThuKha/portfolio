@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { titleVariant } from "../../animation/homeVariant";
 
 const Projects = () => {
   const projectList = [
@@ -17,7 +19,7 @@ const Projects = () => {
     },
     {
       title: "Simple Calculator",
-      body: "Calcular I created with react native",
+      body: "Calcular created with react native",
       url: "https://github.com/MyoThuKha/calculator",
       key: "3",
     },
@@ -34,7 +36,7 @@ const Projects = () => {
     //   key: "5",
     // },
     {
-      title: "Another Note App",
+      title: "Simple Note App",
       body: "Flutter app using sqflite",
       url: "https://github.com/MyoThuKha/Simple-Note-App",
       key: "5",
@@ -44,23 +46,32 @@ const Projects = () => {
   return (
     <div>
       <div className="bodyBox">
-        <div className="titleHeader">Projects</div>
-
-        <div style={{ width: 500 }}>
-          {projectList.map((item) => {
-            return (
-              <div className="" key={item.key}>
-                <Link
-                  href={{ pathname: "/projects/" + item.key, query: item }}
-                  as={"/projects/" + item.key}
-                >
-                  {/* <Link href={"#" + item.key}> */}
-                  <a className="baseLink">{item.title}</a>
-                </Link>
-                <hr />
-              </div>
-            );
-          })}
+        <motion.div
+          variants={titleVariant}
+          initial="before"
+          animate="after"
+          className="titleHeader"
+        >
+          Projects
+        </motion.div>
+        <div className="d-flex justify-content-between">
+          <div style={{ width: 500 }}>
+            {projectList.map((item) => {
+              return (
+                <div className="" key={item.key}>
+                  <Link
+                    href={{ pathname: "/projects/" + item.key, query: item }}
+                    as={"/projects/" + item.key}
+                  >
+                    {/* <Link href={"#" + item.key}> */}
+                    <a className="baseLink">{item.title}</a>
+                  </Link>
+                  <hr />
+                </div>
+              );
+            })}
+          </div>
+          <div></div>
         </div>
       </div>
     </div>
