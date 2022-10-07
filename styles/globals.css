@@ -2,6 +2,10 @@
   font-family: "romance-logic";
   src: url("../assets/fonts/romance-logic.ttf");
 }
+@font-face {
+  font-family: "ananda-black";
+  src: url("../assets/fonts/AnandaBlack.ttf");
+}
 body {
   height: 100vh;
   font-family: "Arial";

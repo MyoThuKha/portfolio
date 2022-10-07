@@ -28,3 +28,8 @@
 .link:hover {
   color: black;
 }
+
+.hello {
+  font-family: "ananda-black";
+  font-size: 50px;
+}
