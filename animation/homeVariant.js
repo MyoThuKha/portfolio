@@ -27,13 +27,6 @@ const textVariant = {
   },
 };
 
-const hoverVariant = {
-  hover: {
-    scale: 1.1,
-    originX: 0,
-  },
-};
-
 const boxVariant = {
   before: {
     opacity: 0,
@@ -51,4 +44,4 @@ const boxVariant = {
   },
 };
 
-export { titleVariant, textVariant, hoverVariant, boxVariant };
+export { titleVariant, textVariant, boxVariant };

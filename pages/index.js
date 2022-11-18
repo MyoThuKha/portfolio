@@ -1,13 +1,14 @@
 import Head from "next/head";
-import React, { useState } from "react";
+import React from "react";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
 import {
   titleVariant,
   textVariant,
-  hoverVariant,
   boxVariant,
 } from "../animation/homeVariant";
+import hoverVariant from "../animation/hoverLink";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         variants={titleVariant}
         initial="before"
         animate="after"
-        className="bodyBox"
+        className="bodyBox position-relative"
       >
         <div className="titleHeader">Home&nbsp;Page</div>
 
@@ -46,12 +47,15 @@ export default function Home() {
             variants={hoverVariant}
             whileHover="hover"
             drag
-            dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
+            // dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
             dragElastic={1}
             whileTap={{ scale: 0.8, borderRadius: "100%" }}
             className="rectangleBox"
           ></motion.div>
         </motion.div>
+        {/* <div className="d-flex container justify-content-end d-none d-md-flex d-lg-flex">
+          <Image src="/circle.svg" alt="icon" width={300} height={300} />
+        </div> */}
       </motion.div>
     </React.Fragment>
   );
