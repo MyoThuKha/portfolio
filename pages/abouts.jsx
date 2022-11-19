@@ -20,19 +20,18 @@ export default function About() {
       className="bodyBox"
     >
       <div className="titleHeader">About</div>
-      <section>
+      <section className=" pb-4">
         <article className="d-flex align-items-center justify-content-between">
           <motion.div variants={leftSideVariant}>
             <div style={{ width: 300, display: "inline-block" }}>
               <div className="lead mt-2 mb-2">Background</div>
               <div>
-                I am a front-end engineer currently living in Pakokku, Myanmar.
-                I am looking for internships right now to work with experienced
-                developers.
+                I am a front-end engineer living in Myanmar. Currently, I am
+                looking for a job to work with talented people around the world.
               </div>
             </div>
           </motion.div>
-          <div style={{ height: 150 }}>
+          <div style={{ height: 150 }} className=" d-lg-block d-none">
             <div
               style={{
                 height: 100,
@@ -85,41 +84,27 @@ export default function About() {
           >
             <div className="lead mt-4 mb-2">Education</div>
             <div>
-              I attend the university of computer studies Mandalay. Currently, I
-              am self-studying from home cause of the pandemic and the various
-              things happening in Myanmar.
+              I attend the university of computer studies in Mandalay.
+              Currently, I am postponing my journey and start learning by myself
+              cause of the covid and the various things happening in Myanmar.
             </div>
           </motion.div>
         </article>
 
         <article className="d-flex justify-content-end">
-          {/* <article className="d-flex align-items-center justify-content-between"> */}
-          {/* <motion.div variants={arrowVariant}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
-              fill="black"
-              className="bi bi-arrow-down"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fillRule="evenodd"
-                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-              />
-            </svg>
-          </motion.div> */}
           <div>
-            <motion.div variants={rightSideVariant} style={{ width: 300 }}>
+            <motion.div variants={rightSideVariant} style={{ width: 350 }}>
               <div className="lead mt-4 mb-2">Skills</div>
               <div>
-                I am a front-end engineer specializing in react and next js. I
-                use redux to clear and centralize the application state. For
-                styling, I can use both Bootstrap and Tailwind CSS. I use framer
-                motion for animating my projects. I also create android apps
-                using cross-platform languages like React-native and Flutter.
-                Hey, guess what? I am also fluent in python. And of course, last
-                but not least, git for version control.
+                I specialized in and love React and Next.js for Server-Side
+                Rendering. As for styling, although I prefer Tailwind for
+                styling and stuff, I use bootstrap as my second choice.
+                Unfortunately, as for animation, I can only work with framer
+                motion. As in mobile development, I first learned about Flutter.
+                After working with flutter for about six months, I tried
+                React-Native. Both are amazing tools to create cross-platform
+                apps. Because of both React-Native and Flutter&apos;s
+                flexibility, both are frameworks that I am happy to work with.
               </div>
             </motion.div>
           </div>
@@ -128,16 +113,14 @@ export default function About() {
           <motion.div variants={leftSideVariant} style={{ width: 300 }}>
             <div className="lead mt-4 mb-2">Hobbies</div>
             <p>
-              I love talking about computers and coding with other developers.
-              Drinking tea while coding is one of my favorites. In my spare
-              time, I watch some anime. One piece is awesome. I like eating
-              bread fried with eggs and topped with a bit of sugar. I also like
-              eating shan noodles for breakfast with chicken toppings.
+              I love creating clean and beautiful UI applications and websites.
+              I am willing to discuss newer technology with different people.
+              Leetcode questions are my kryptonite and I use Vim in vs code. I
+              love working with other developers and UI designers, so feel free
+              to connect with me to build amazing stuff.
             </p>
           </motion.div>
         </article>
-
-        <h4></h4>
       </section>
     </motion.div>
   );

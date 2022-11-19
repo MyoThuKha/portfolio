@@ -31,17 +31,17 @@ export default function Home() {
           <motion.div
             variants={hoverVariant}
             whileHover="hover"
-            className="d-inline-block fs-3 pb-3"
+            className="d-inline-block fs-3 pb-1"
           >
             Myo Thu Kha
           </motion.div>
-          <div className={styles.text}>I am a Front-end Engineer</div>
+          <div className={styles.text}>I am a Programmer</div>
         </motion.div>
 
         <motion.div
           variants={boxVariant}
           style={{ marginRight: "100px" }}
-          className="d-flex container justify-content-end d-none d-md-flex d-lg-flex"
+          className="d-flex container ms-5 ms-lg-0 mt-5 mt-lg-0 justify-content-end d-flex"
         >
           <motion.div
             variants={hoverVariant}
