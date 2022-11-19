@@ -46,7 +46,7 @@ const Projects = () => {
               </motion.div>
             )}
           </AnimatePresence>
-          <div>
+          <div className="arial">
             <a
               className="display-1 aLink"
               href="https://recipes-myothukha.vercel.app"

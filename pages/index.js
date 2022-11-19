@@ -17,7 +17,7 @@ export default function Home() {
         variants={titleVariant}
         initial="before"
         animate="after"
-        className="bodyBox position-relative"
+        className="bodyBox position-relative overflow-hidden"
       >
         <div className="titleHeader">Home&nbsp;Page</div>
 
