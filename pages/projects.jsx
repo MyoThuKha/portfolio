@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { titleVariant } from "../animation/homeVariant";
 import { useState } from "react";
 import opacityVariant from "../animation/opacity";
+import Head from "next/head";
 
 const Projects = () => {
   const [image, setImage] = useState("");
@@ -12,8 +13,11 @@ const Projects = () => {
     return "";
   };
   return (
-    <div>
-      <div className="bodyBox">
+    <>
+      <Head>
+        <title>Projects</title>
+      </Head>
+      <div className="bodyBox position-relative">
         <motion.div
           variants={titleVariant}
           initial="before"
@@ -77,8 +81,20 @@ const Projects = () => {
             </a>
           </div>
         </div>
+        {/* <div className="text-center position-absolute psnCustom">
+          <motion.a
+            variants={hoverVariant}
+            whileHover="hover"
+            href="https://github.com/MyoThuKha"
+            target="_blank"
+            rel="noreferrer"
+            className="aLink"
+          >
+            See More
+          </motion.a>
+        </div> */}
       </div>
-    </div>
+    </>
   );
 };
 

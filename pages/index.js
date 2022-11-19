@@ -1,7 +1,4 @@
 import Head from "next/head";
-import React from "react";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
 import {
   titleVariant,
@@ -12,7 +9,7 @@ import hoverVariant from "../animation/hoverLink";
 
 export default function Home() {
   return (
-    <React.Fragment>
+    <>
       <Head>
         <title>Home</title>
       </Head>
@@ -25,17 +22,17 @@ export default function Home() {
         <div className="titleHeader">Home&nbsp;Page</div>
 
         {/* introduction */}
-        <motion.div variants={textVariant} className={styles.text}>
-          <span className="">Hi</span> my name is
+        <motion.div variants={textVariant}>
+          Hi my name is
           <br />
           <motion.div
             variants={hoverVariant}
             whileHover="hover"
-            className="d-inline-block fs-3 pb-1"
+            className="d-inline-block fs-2 pb-1"
           >
             Myo Thu Kha
           </motion.div>
-          <div className={styles.text}>I am a Programmer</div>
+          <div>I am a Software Developer</div>
         </motion.div>
 
         <motion.div
@@ -57,6 +54,6 @@ export default function Home() {
           <Image src="/circle.svg" alt="icon" width={300} height={300} />
         </div> */}
       </motion.div>
-    </React.Fragment>
+    </>
   );
 }

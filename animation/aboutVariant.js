@@ -8,6 +8,10 @@ const nameVariant = {
     opacity: 1,
     transition: {
       delay: 1,
+      duration: 0.5,
+      ease: "easeInOut",
+      type: "spring",
+      bounce: 0.4,
     },
   },
 };
@@ -50,17 +54,6 @@ const rightSideVariant = {
     transition: {
       type: "spring",
       stiffness: 100,
-      when: "beforeChildren",
-    },
-  },
-};
-const arrowVariant = {
-  before: {
-    opacity: 0,
-  },
-  after: {
-    opacity: 1,
-    transition: {
       when: "beforeChildren",
     },
   },

@@ -6,29 +6,6 @@
   font-family: "ananda-black";
   src: url("../assets/fonts/AnandaBlack.ttf");
 }
-body {
-  height: 100vh;
-  background-color: #eeeff1;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.bodyBox {
-  min-height: 100vh;
-  background-color: #eeeff1;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.aLink {
-  color: black;
-  text-decoration: none;
-}
-.hide {
-  display: none;
-}
-.aLink:hover {
-  color: black;
-  cursor: pointer;
-}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -46,6 +23,21 @@ body {
   border: 1px solid white;
 }
 
+.bodyBox {
+  min-height: 100vh;
+  background-color: #eeeff1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.aLink {
+  color: black;
+  text-decoration: none;
+}
+.aLink:hover {
+  color: black;
+  cursor: pointer;
+}
+
 .titleHeader {
   font-size: 5rem;
   font-family: "romance-logic";
@@ -55,12 +47,6 @@ body {
   width: 250px;
   height: 250px;
   border: 2px solid black;
-}
-.circleBox {
-  width: 250px;
-  height: 250px;
-  border: 2px solid black;
-  border-radius: 100vw;
 }
 
 .imageBox {
