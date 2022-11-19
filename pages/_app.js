@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div style={{ backgroundColor: "#eeeff1" }}>
       <NavBar></NavBar>
-      <div className="ps-4 pe-3">
+      <div className="ps-4 pe-3 bodyBox">
         <Component {...pageProps} />
       </div>
     </div>
